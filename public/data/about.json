@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "title": "주 언어",
+    "content": "JavaScript / React"
+  },
+  { "id": 2, "title": "전화번호", "content": "010-2459-9616" },
+  { "id": 3, "title": "이메일", "content": "dawonohh@gmail.com" },
+  { "id": 4, "title": "주소", "content": "경기도 부천시" },
+  { "id": 5, "title": "Github", "link": "https://github.com/DawonOh" },
+  { "id": 6, "title": "Blog", "link": "https://dawonoh.github.io/" }
+]
