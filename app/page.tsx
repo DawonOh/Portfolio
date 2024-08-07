@@ -3,14 +3,16 @@ import Link from "next/link";
 
 import Card from "./components/card/card";
 
-import githubLogo from "@/assets/icon/github-mark.png";
-import pageDownIcon from "@/assets/icon/page-down.png";
+import githubLogo from "@/public/assets/icon/github-mark.png";
+import pageDownIcon from "@/public/assets/icon/page-down.png";
+import timeline from "@/public/assets/img/timeline.png";
 
 interface AboutDataType {
   id: number;
   title: string;
   content?: string;
   link?: string;
+  icon?: string;
 }
 
 interface TimelineDataType {
@@ -58,31 +60,73 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className="w-full h-screen p-20 bg-light-gray">
-        <h2 id="about">about</h2>
-        {aboutDatas.map((data: AboutDataType) => (
-          <div key={data.id}>
-            {data.title} : {data.content ? data.content : data.link}
+      <section
+        id="about"
+        className="w-full h-screen flexCenter flex-col bg-light-gray"
+      >
+        <h2 className="mb-20 text-3xl font-semibold">ABOUT</h2>
+
+        <div className="w-3/5 flexCenter flex-col">
+          <div className="w-4/5">
+            <div className="mb-2">
+              <span className="text-3xl font-semibold mr-2">오다원</span>
+              <span>프론트엔드 개발자</span>
+            </div>
+            <div className="flex gap-2 border-l-2 border-main-blue pl-4 mb-4">
+              다른 사람에게 도움이 되는 서비스를 개발하는 개발자가 되기 위해
+              노력하고 있습니다.
+              <br /> Javascript와 React를 메인으로, 현재는 Next.js를 학습하고
+              있습니다.
+            </div>
+            <div className="flex justify-between items-center">
+              {aboutDatas.map((data: AboutDataType) => (
+                <div
+                  key={data.id}
+                  className="flex justify-between items-center gap-2"
+                >
+                  {data.icon && (
+                    <Image
+                      src={data.icon}
+                      alt={data.title}
+                      width={100}
+                      height={100}
+                      className="w-auto h-auto"
+                    />
+                  )}
+                  {data.content ? data.content : data.link}
+                </div>
+              ))}
+            </div>
           </div>
-        ))}
-        <div>
-          다른 사람에게 도움이 되는 서비스를 개발하는 개발자가 되기 위해
-          노력하고 있습니다. 프로젝트 진행 후, 효율적으로 코드를 작성하기 위해
-          리팩토링을 진행하였으며, 그 결과 기존 코드 양 대비 10% 이상을 줄일 수
-          있었습니다.
+          <div className="w-4/5 mt-20">
+            <h3 className="mb-12 text-xl font-semibold">Time-Line</h3>
+            <Image
+              src={timeline}
+              alt="timeline"
+              className="absolute left-1/2 -translate-x-1/2"
+            />
+            <div className="absolute flex gap-20 left-1/2 -translate-x-1/2 -translate-y-1/2 z-40">
+              <div className="w-4 h-4 rounded-full bg-black" />
+              <div className="w-4 h-4 rounded-full bg-black" />
+              <div className="w-4 h-4 rounded-full bg-black" />
+              <div className="w-4 h-4 rounded-full bg-black" />
+              <div className="w-4 h-4 rounded-full bg-black" />
+              <div className="w-4 h-4 rounded-full bg-black" />
+            </div>
+            <div className="flex flex-col gap-4 mt-24">
+              {timelineDatas.map((data: TimelineDataType) => (
+                <div key={data.id}>
+                  <span className="mr-4 text-text-gray">{data.date}</span>
+                  <span>{data.content}</span>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
-        <h3>Time-Line</h3>
-        <div></div>
-        {timelineDatas.map((data: TimelineDataType) => (
-          <div key={data.id}>
-            <span>{data.date}</span>
-            <span>{data.content}</span>
-          </div>
-        ))}
       </section>
 
-      <section className="w-full h-screen p-20 bg-medium-gray">
-        <h2 id="projects">Projects</h2>
+      <section id="projects" className="w-full h-screen p-20 bg-medium-gray">
+        <h2>Projects</h2>
         {projectDate.map((data: ProjectDataType) => (
           <Card key={data.id} data={data} />
         ))}

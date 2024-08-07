@@ -1,12 +1,26 @@
 [
   {
     "id": 1,
-    "title": "주 언어",
-    "content": "JavaScript / React"
+    "title": "이메일",
+    "content": "dawonohh@gmail.com",
+    "icon": "/assets/icon/email.png"
   },
-  { "id": 2, "title": "전화번호", "content": "010-2459-9616" },
-  { "id": 3, "title": "이메일", "content": "dawonohh@gmail.com" },
-  { "id": 4, "title": "주소", "content": "경기도 부천시" },
-  { "id": 5, "title": "Github", "link": "https://github.com/DawonOh" },
-  { "id": 6, "title": "Blog", "link": "https://dawonoh.github.io/" }
+  {
+    "id": 2,
+    "title": "전화번호",
+    "content": "010-2459-9616",
+    "icon": "/assets/icon/phone.png"
+  },
+  {
+    "id": 3,
+    "title": "생년월일",
+    "content": "1998.04.14",
+    "icon": "/assets/icon/birth.png"
+  },
+  {
+    "id": 4,
+    "title": "주소",
+    "content": "경기도 부천시",
+    "icon": "/assets/icon/location.png"
+  }
 ]
