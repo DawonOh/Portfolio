@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="kr" className={`${pretendard.variable}`}>
       <body className={pretendard.className}>
-        <header className="sticky top-0 p-4 flexCenter bg-white/60 backdrop-blur-xl border-b border-medium-gray">
+        <header className="sticky top-0 p-4 flexCenter bg-white/60 backdrop-blur-xl border-b border-medium-gray z-50">
           <ul className="w-1/2 flex justify-between items-center">
             <li>
               <Link href="/">Home</Link>
@@ -38,9 +38,10 @@ export default function RootLayout({
         </header>
         {children}
         <footer className="flex flex-col justify-center items-center bg-dark-gray">
-          <span className="text-xl font-semibold">포트폴리오</span>
+          <span className="text-xl font-semibold">PORTFOLIO</span>
           <span>오다원</span>
         </footer>
+        <div className="w-8 h-8 fixed bg-black"></div>
       </body>
     </html>
   );

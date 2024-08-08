@@ -15,6 +15,9 @@ const config: Config = {
         "dark-gray": "#D9D9D9",
         "text-gray": "#A6A6A6",
       },
+      gridTemplateColumns: {
+        card: "repeat(auto-fill, minmax(250px, 1fr))",
+      },
     },
   },
   plugins: [],

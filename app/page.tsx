@@ -96,11 +96,16 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="projects" className="w-full h-screen p-20 bg-medium-gray">
-        <h2>Projects</h2>
-        {projectDate.map((data: ProjectDataType) => (
-          <Card key={data.id} data={data} />
-        ))}
+      <section
+        id="projects"
+        className="w-full h-screen flexCenter flex-col bg-medium-gray"
+      >
+        <h2 className="mb-20 text-3xl font-semibold">PROJECTS</h2>
+        <div className="grid grid-cols-card justify-around items-center w-3/5 p-8 mx-auto my-0 gap-8">
+          {projectDate.map((data: ProjectDataType) => (
+            <Card key={data.id} data={data} />
+          ))}
+        </div>
       </section>
     </main>
   );
