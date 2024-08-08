@@ -5,7 +5,7 @@ import Card from "./components/card/card";
 
 import githubLogo from "@/public/assets/icon/github-mark.png";
 import pageDownIcon from "@/public/assets/icon/page-down.png";
-import timeline from "@/public/assets/img/timeline.png";
+import Timeline from "./components/timeline/timeline";
 
 interface AboutDataType {
   id: number;
@@ -13,12 +13,6 @@ interface AboutDataType {
   content?: string;
   link?: string;
   icon?: string;
-}
-
-interface TimelineDataType {
-  id: number;
-  date: string;
-  content: string;
 }
 
 export interface ProjectDataType {
@@ -78,7 +72,7 @@ export default function Home() {
               <br /> Javascript와 React를 메인으로, 현재는 Next.js를 학습하고
               있습니다.
             </div>
-            <div className="flex justify-between items-center">
+            <div className="flex justify-start items-center gap-8">
               {aboutDatas.map((data: AboutDataType) => (
                 <div
                   key={data.id}
@@ -98,30 +92,7 @@ export default function Home() {
               ))}
             </div>
           </div>
-          <div className="w-4/5 mt-20">
-            <h3 className="mb-12 text-xl font-semibold">Time-Line</h3>
-            <Image
-              src={timeline}
-              alt="timeline"
-              className="absolute left-1/2 -translate-x-1/2"
-            />
-            <div className="absolute flex gap-20 left-1/2 -translate-x-1/2 -translate-y-1/2 z-40">
-              <div className="w-4 h-4 rounded-full bg-black" />
-              <div className="w-4 h-4 rounded-full bg-black" />
-              <div className="w-4 h-4 rounded-full bg-black" />
-              <div className="w-4 h-4 rounded-full bg-black" />
-              <div className="w-4 h-4 rounded-full bg-black" />
-              <div className="w-4 h-4 rounded-full bg-black" />
-            </div>
-            <div className="flex flex-col gap-4 mt-24">
-              {timelineDatas.map((data: TimelineDataType) => (
-                <div key={data.id}>
-                  <span className="mr-4 text-text-gray">{data.date}</span>
-                  <span>{data.content}</span>
-                </div>
-              ))}
-            </div>
-          </div>
+          <Timeline timelineDatas={timelineDatas} />
         </div>
       </section>
 

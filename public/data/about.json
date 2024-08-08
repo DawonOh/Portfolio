@@ -7,18 +7,12 @@
   },
   {
     "id": 2,
-    "title": "전화번호",
-    "content": "010-2459-9616",
-    "icon": "/assets/icon/phone.png"
-  },
-  {
-    "id": 3,
     "title": "생년월일",
     "content": "1998.04.14",
     "icon": "/assets/icon/birth.png"
   },
   {
-    "id": 4,
+    "id": 3,
     "title": "주소",
     "content": "경기도 부천시",
     "icon": "/assets/icon/location.png"
