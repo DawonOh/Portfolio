@@ -28,9 +28,9 @@ export default function Timeline(props: { timelineDatas: TimelineDataType[] }) {
   };
   return (
     <div className="w-4/5 mt-20">
-      <div className="mb-12 ">
-        <h3 className="text-xl font-semibold">Time-Line</h3>
-        <span className="text-sm text-text-gray">
+      <div className="mb-12">
+        <h3 className="text-xl font-semibold pl-4">Time-Line</h3>
+        <span className="text-sm text-text-gray pl-4">
           각 점에 마우스를 가져다 대보세요!
         </span>
       </div>
@@ -42,11 +42,11 @@ export default function Timeline(props: { timelineDatas: TimelineDataType[] }) {
       <div className="absolute flex gap-20 left-1/2 -translate-x-1/2 -translate-y-1/2 z-40">
         {timeLineCircle()}
       </div>
-      <div className="flex flex-col gap-4 mt-24">
+      <div className="flex flex-col gap-3 mt-28">
         {props.timelineDatas.map((data: TimelineDataType) => (
           <div
             key={data.id}
-            className={`${hoverEl === data.id && "font-bold"}`}
+            className={`${hoverEl === data.id && "font-bold"} pl-8`}
           >
             <span className="mr-4 text-text-gray">{data.date}</span>
             <span>{data.content}</span>
