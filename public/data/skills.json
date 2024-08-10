@@ -1,48 +1,95 @@
 [
   [
-    { "id": 1, "image": "/assets/icon/javascript.png", "title": "JavaScript" },
-    { "id": 2, "image": "/assets/icon/typescript.png", "title": "TypeScript" },
-    { "id": 3, "image": "/assets/icon/html5.png", "title": "HTML5" },
-    { "id": 4, "image": "/assets/icon/css3.png", "title": "CSS3" }
-  ],
-  [
-    { "id": 1, "image": "/assets/icon/nextjs.png", "title": "Next.js" },
-    { "id": 2, "image": "/assets/icon/react.png", "title": "React" },
-    { "id": 3, "image": "/assets/icon/redux.png", "title": "Redux" },
-    { "id": 4, "image": "/assets/icon/redux.png", "title": "Redux-Toolkit" },
     {
-      "id": 5,
-      "image": "/assets/icon/styled-components.png",
-      "title": "Styled-Components"
-    },
-    {
-      "id": 6,
-      "image": "/assets/icon/tailwindcss.png",
-      "title": "Tailwind CSS"
+      "id": 1,
+      "category": "Programing Languages",
+      "badges": [
+        {
+          "id": 1,
+          "image": "/assets/icon/javascript.png",
+          "title": "JavaScript"
+        },
+        {
+          "id": 2,
+          "image": "/assets/icon/typescript.png",
+          "title": "TypeScript"
+        },
+        { "id": 3, "image": "/assets/icon/html5.png", "title": "HTML5" },
+        { "id": 4, "image": "/assets/icon/css3.png", "title": "CSS3" }
+      ]
     }
   ],
   [
-    { "id": 1, "image": "/assets/icon/github.png", "title": "Git/Github" },
     {
       "id": 2,
-      "image": "/assets/icon/cloudfront.png",
-      "title": "AWS CloudFront"
-    },
-    { "id": 3, "image": "/assets/icon/s3.png", "title": "AWS S3" },
-    { "id": 4, "image": "/assets/icon/route53.png", "title": "AWS Route53" }
-  ],
-  [
-    { "id": 1, "image": "/assets/icon/windows10.png", "title": "Windows 10" },
-    { "id": 2, "image": "/assets/icon/wsl2.png", "title": "WSL2(Ubuntu)" },
-    {
-      "id": 3,
-      "image": "/assets/icon/vscode.png",
-      "title": "Visual Studio Code"
+      "category": "Framework / Library",
+      "badges": [
+        { "id": 1, "image": "/assets/icon/nextjs.png", "title": "Next.js" },
+        { "id": 2, "image": "/assets/icon/react.png", "title": "React" },
+        { "id": 3, "image": "/assets/icon/redux.png", "title": "Redux" },
+        {
+          "id": 4,
+          "image": "/assets/icon/redux.png",
+          "title": "Redux-Toolkit"
+        },
+        {
+          "id": 5,
+          "image": "/assets/icon/styled-components.png",
+          "title": "Styled-Components"
+        },
+        {
+          "id": 6,
+          "image": "/assets/icon/tailwindcss.png",
+          "title": "Tailwind CSS"
+        }
+      ]
     }
   ],
   [
-    { "id": 1, "image": "/assets/icon/figma.png", "title": "Figma" },
-    { "id": 2, "image": "/assets/icon/slack.png", "title": "Slack" },
-    { "id": 3, "image": "/assets/icon/notion.png", "title": "Notion" }
+    {
+      "id": 1,
+
+      "category": "Tooling / DevOps",
+      "badges": [
+        { "id": 1, "image": "/assets/icon/github.png", "title": "Git/Github" },
+        {
+          "id": 2,
+          "image": "/assets/icon/cloudfront.png",
+          "title": "AWS CloudFront"
+        },
+        { "id": 3, "image": "/assets/icon/s3.png", "title": "AWS S3" },
+        { "id": 4, "image": "/assets/icon/route53.png", "title": "AWS Route53" }
+      ]
+    }
+  ],
+  [
+    {
+      "id": 1,
+      "category": "Environment",
+      "badges": [
+        {
+          "id": 1,
+          "image": "/assets/icon/windows10.png",
+          "title": "Windows 10"
+        },
+        { "id": 2, "image": "/assets/icon/wsl2.png", "title": "WSL2(Ubuntu)" },
+        {
+          "id": 3,
+          "image": "/assets/icon/vscode.png",
+          "title": "Visual Studio Code"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "id": 1,
+      "category": "ETC",
+      "badges": [
+        { "id": 1, "image": "/assets/icon/figma.png", "title": "Figma" },
+        { "id": 2, "image": "/assets/icon/slack.png", "title": "Slack" },
+        { "id": 3, "image": "/assets/icon/notion.png", "title": "Notion" }
+      ]
+    }
   ]
 ]

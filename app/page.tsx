@@ -23,7 +23,12 @@ export interface ProjectDataType {
   image: string;
 }
 
-export type SkillDataType = Pick<ProjectDataType, "id" | "title" | "image">;
+type SkillDataType = Pick<ProjectDataType, "id" | "title" | "image">;
+export interface SkillDataArrType {
+  id: number;
+  category: string;
+  badges: SkillDataType[];
+}
 
 export default function Home() {
   const aboutDatas = require("/public/data/about.json");
@@ -103,46 +108,24 @@ export default function Home() {
       <section id="skills" className="w-full h-screen flexCenter flex-col">
         <h2 className="mb-20 text-3xl font-semibold">SKILLS</h2>
         <div className="flex flex-col justify-center items-start gap-8">
-          <div>
-            <h3 className="mb-2 text-2xl font-medium">Programing Languages</h3>
-            <div className="flexCenter gap-2">
-              {skillData[0].map((data: SkillDataType) => (
-                <Badge key={data.id} image={data.image} title={data.title} />
-              ))}
-            </div>
-          </div>
-          <div>
-            <h3 className="mb-2 text-2xl font-medium">Framework/Library</h3>
-            <div className="flexCenter gap-2">
-              {skillData[1].map((data: SkillDataType) => (
-                <Badge key={data.id} image={data.image} title={data.title} />
-              ))}
-            </div>
-          </div>
-          <div>
-            <h3 className="mb-2 text-2xl font-medium">Tooling/DevOps</h3>
-            <div className="flexCenter gap-2">
-              {skillData[2].map((data: SkillDataType) => (
-                <Badge key={data.id} image={data.image} title={data.title} />
-              ))}
-            </div>
-          </div>
-          <div>
-            <h3 className="mb-2 text-2xl font-medium">Environment</h3>
-            <div className="flexCenter gap-2">
-              {skillData[3].map((data: SkillDataType) => (
-                <Badge key={data.id} image={data.image} title={data.title} />
-              ))}
-            </div>
-          </div>
-          <div>
-            <h3 className="mb-2 text-2xl font-medium">ETC</h3>
-            <div className="flexCenter gap-2">
-              {skillData[4].map((data: SkillDataType) => (
-                <Badge key={data.id} image={data.image} title={data.title} />
-              ))}
-            </div>
-          </div>
+          {skillData.map((skills: SkillDataArrType[]) =>
+            skills.map((data: SkillDataArrType) => (
+              <div key={data.id} className="flex flex-col gap-2">
+                {data.category && (
+                  <h3 className="mb-2 text-2xl font-medium">{data.category}</h3>
+                )}
+                <div className="flexCenter gap-2">
+                  {data.badges.map((badge: SkillDataType) => (
+                    <Badge
+                      key={badge.id}
+                      image={badge.image}
+                      title={badge.title}
+                    />
+                  ))}
+                </div>
+              </div>
+            ))
+          )}
         </div>
       </section>
 
