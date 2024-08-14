@@ -21,6 +21,7 @@ export interface ProjectDataType {
   date: string;
   title: string;
   image: string;
+  link: string;
 }
 
 type SkillDataType = Pick<ProjectDataType, "id" | "title" | "image">;
@@ -38,7 +39,7 @@ export default function Home() {
 
   return (
     <main>
-      <section id="home" className="w-full h-screen ">
+      <section id="home" className="w-full h-screen">
         <div className="p-40">
           <span>Frontend Developer</span>
           <h1 className="text-8xl font-bold text-main-blue">PORTFOLIO</h1>
@@ -137,7 +138,9 @@ export default function Home() {
           <h2 className="mb-20 text-3xl font-semibold text-white">PROJECTS</h2>
           <div className="grid grid-cols-card justify-around items-center w-3/5 p-8 mx-auto my-0 gap-8">
             {projectDate.map((data: ProjectDataType) => (
-              <Card key={data.id} data={data} />
+              <Link key={data.id} href={data.link}>
+                <Card data={data} />
+              </Link>
             ))}
           </div>
         </div>

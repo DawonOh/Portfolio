@@ -40,7 +40,7 @@ export default function RootLayout({
           </ul>
         </header>
         {children}
-        <footer className="flex flex-col justify-center items-center bg-dark-gray">
+        <footer className="fixed bottom-0 w-full flex flex-col justify-center items-center bg-dark-gray">
           <span className="text-xl font-semibold">PORTFOLIO</span>
           <span>오다원</span>
         </footer>

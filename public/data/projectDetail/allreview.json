@@ -1,0 +1,82 @@
+{
+  "title": "리뷰 사이트(Allreview)",
+  "semiTitle": "리뷰 전용 커뮤니티 사이트",
+  "description": "분야 상관없이 카테고리로 분류하여 리뷰를 올리고, 댓글과 대댓글로 소통할 수 있는 리뷰 전용 사이트입니다./프로젝트 완료 후 Redux와 React Query를 사용하여 리팩토링을 진행하였습니다.",
+  "startDate": "2023.01",
+  "endDate": "2023.06(리팩토링 기간: 2023.11 ~ 2024.02)",
+  "member": "프론트엔드 1명 / 백엔드 1명",
+  "contribution": 100,
+  "githubLink": "https://github.com/DawonOh/review-board",
+  "skills": [
+    {
+      "id": 1,
+      "category": "언어 및 라이브러리",
+      "badges": [
+        { "id": 1, "image": "/assets/icon/react.png", "title": "React" },
+        {
+          "id": 2,
+          "image": "/assets/icon/typescript.png",
+          "title": "TypeScript"
+        },
+        {
+          "id": 3,
+          "image": "/assets/icon/tailwindcss.png",
+          "title": "Tailwind CSS"
+        },
+        { "id": 4, "image": "/assets/icon/redux.png", "title": "Redux" }
+      ]
+    },
+    {
+      "id": 2,
+      "category": "개발 환경",
+      "badges": [
+        {
+          "id": 1,
+          "image": "/assets/icon/windows10.png",
+          "title": "Windows 10"
+        },
+        {
+          "id": 2,
+          "image": "/assets/icon/wsl2.png",
+          "title": "WSL2(Ubuntu)"
+        },
+        {
+          "id": 3,
+          "image": "/assets/icon/vscode.png",
+          "title": "Visual Studio Code"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "category": "배포",
+      "badges": [
+        {
+          "id": 1,
+          "image": "/assets/icon/cloudfront.png",
+          "title": "AWS CloudFront"
+        },
+        { "id": 2, "image": "/assets/icon/s3.png", "title": "AWS S3" },
+        {
+          "id": 3,
+          "image": "/assets/icon/route53.png",
+          "title": "AWS Route53"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "category": "기타",
+      "badges": [
+        {
+          "id": 1,
+          "image": "/assets/icon/github.png",
+          "title": "Git/Github"
+        },
+        { "id": 2, "image": "/assets/icon/figma.png", "title": "Figma" },
+        { "id": 3, "image": "/assets/icon/slack.png", "title": "Slack" },
+        { "id": 4, "image": "/assets/icon/notion.png", "title": "Notion" }
+      ]
+    }
+  ]
+}
