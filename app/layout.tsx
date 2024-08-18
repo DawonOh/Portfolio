@@ -21,15 +21,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="kr" className={`${pretendard.variable}`}>
+    <html lang="kr" className={`${pretendard.variable} scroll-smooth`}>
       <body className={pretendard.className}>
-        <header className="sticky top-0 p-4 flexCenter bg-white/60 backdrop-blur-xl border-b border-medium-gray">
+        <header className="sticky top-0 p-4 flexCenter bg-white/60 backdrop-blur-xl border-b border-medium-gray z-50">
           <ul className="w-1/2 flex justify-between items-center">
             <li>
-              <Link href="/">Home</Link>
+              <Link href="/#home">Home</Link>
             </li>
             <li>
               <Link href="/#about">About</Link>
+            </li>
+            <li>
+              <Link href="/#skills">Skills</Link>
             </li>
             <li>
               <Link href="/#projects">Projects</Link>
@@ -37,8 +40,8 @@ export default function RootLayout({
           </ul>
         </header>
         {children}
-        <footer className="flex flex-col justify-center items-center bg-dark-gray">
-          <span className="text-xl font-semibold">포트폴리오</span>
+        <footer className="fixed bottom-0 w-full flex flex-col justify-center items-center bg-dark-gray">
+          <span className="text-xl font-semibold">PORTFOLIO</span>
           <span>오다원</span>
         </footer>
       </body>

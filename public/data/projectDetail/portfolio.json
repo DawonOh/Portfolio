@@ -1,0 +1,90 @@
+{
+  "title": "Portfolio 프로젝트",
+  "semiTitle": "Next.js를 사용한 포트폴리오 사이트",
+  "description": "메인페이지와 각 프로젝트의 상세페이지로 구성되어있습니다./Next.js를 사용한 첫 프로젝트이며, 프레임워크를 사용하는데에 익숙해지는 것에 목표를 두었습니다.",
+  "startDate": "2024.08.05",
+  "endDate": "진행중",
+  "member": "프론트엔드 1명",
+  "contribution": 100,
+  "githubLink": "https://github.com/DawonOh/Portfolio",
+  "skills": [
+    {
+      "id": 1,
+      "category": "언어 및 라이브러리",
+      "badges": [
+        { "id": 1, "image": "/assets/icon/nextjs.png", "title": "Next.js" },
+        { "id": 2, "image": "/assets/icon/react.png", "title": "React" },
+        {
+          "id": 3,
+          "image": "/assets/icon/typescript.png",
+          "title": "TypeScript"
+        },
+        {
+          "id": 4,
+          "image": "/assets/icon/tailwindcss.png",
+          "title": "Tailwind CSS"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "category": "개발 환경",
+      "badges": [
+        {
+          "id": 1,
+          "image": "/assets/icon/windows10.png",
+          "title": "Windows 10"
+        },
+        {
+          "id": 2,
+          "image": "/assets/icon/wsl2.png",
+          "title": "WSL2(Ubuntu)"
+        },
+        {
+          "id": 3,
+          "image": "/assets/icon/vscode.png",
+          "title": "Visual Studio Code"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "category": "기타",
+      "badges": [
+        {
+          "id": 1,
+          "image": "/assets/icon/github.png",
+          "title": "Git/Github"
+        },
+        { "id": 2, "image": "/assets/icon/figma.png", "title": "Figma" }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": 1,
+      "image": "/assets/img/portfolio/portfolio_main.png",
+      "alt": "포트폴리오 프로젝트 메인페이지"
+    },
+    {
+      "id": 2,
+      "image": "/assets/img/portfolio/portfolio_about.png",
+      "alt": "포트폴리오 프로젝트 about"
+    },
+    {
+      "id": 3,
+      "image": "/assets/img/portfolio/portfolio_skills.png",
+      "alt": "포트폴리오 프로젝트 skills"
+    },
+    {
+      "id": 4,
+      "image": "/assets/img/portfolio/portfolio_projects.png",
+      "alt": "포트폴리오 프로젝트 projects"
+    },
+    {
+      "id": 5,
+      "image": "/assets/img/portfolio/portfolio_detail.png",
+      "alt": "포트폴리오 프로젝트 상세페이지"
+    }
+  ]
+}
