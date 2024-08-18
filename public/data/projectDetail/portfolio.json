@@ -59,5 +59,32 @@
         { "id": 2, "image": "/assets/icon/figma.png", "title": "Figma" }
       ]
     }
+  ],
+  "images": [
+    {
+      "id": 1,
+      "image": "/assets/img/portfolio/portfolio_main.png",
+      "alt": "포트폴리오 프로젝트 메인페이지"
+    },
+    {
+      "id": 2,
+      "image": "/assets/img/portfolio/portfolio_about.png",
+      "alt": "포트폴리오 프로젝트 about"
+    },
+    {
+      "id": 3,
+      "image": "/assets/img/portfolio/portfolio_skills.png",
+      "alt": "포트폴리오 프로젝트 skills"
+    },
+    {
+      "id": 4,
+      "image": "/assets/img/portfolio/portfolio_projects.png",
+      "alt": "포트폴리오 프로젝트 projects"
+    },
+    {
+      "id": 5,
+      "image": "/assets/img/portfolio/portfolio_detail.png",
+      "alt": "포트폴리오 프로젝트 상세페이지"
+    }
   ]
 }

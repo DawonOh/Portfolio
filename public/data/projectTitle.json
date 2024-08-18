@@ -3,14 +3,14 @@
     "id": 1,
     "date": "2024.08 ~ 현재",
     "title": "포트폴리오",
-    "image": "/assets/img/portfolio.png",
+    "image": "/assets/img/portfolioLogo.png",
     "link": "/portfolio"
   },
   {
     "id": 2,
     "date": "2023.01 ~ 2024.02",
     "title": "리뷰 사이트(ALLREVIEW)",
-    "image": "/assets/img/allreview.png",
+    "image": "/assets/img/allreviewLogo.png",
     "link": "/allreview"
   },
   {
@@ -18,7 +18,7 @@
 
     "date": "2022.12 ~ 2022.12",
     "title": "FASTFIVE 기업 협업 프로젝트",
-    "image": "/assets/img/fastfive.png",
+    "image": "/assets/img/fastfiveLogo.png",
     "link": "/fastfive"
   }
 ]

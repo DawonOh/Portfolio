@@ -78,5 +78,22 @@
         { "id": 4, "image": "/assets/icon/notion.png", "title": "Notion" }
       ]
     }
+  ],
+  "images": [
+    {
+      "id": 1,
+      "image": "/assets/img/allreview/allreview_login.png",
+      "alt": "allreview 프로젝트 로그인 페이지"
+    },
+    {
+      "id": 2,
+      "image": "/assets/img/allreview/allreview_main.png",
+      "alt": "allreview 프로젝트 메인페이지"
+    },
+    {
+      "id": 3,
+      "image": "/assets/img/allreview/allreview_search.png",
+      "alt": "allreview 프로젝트 검색"
+    }
   ]
 }

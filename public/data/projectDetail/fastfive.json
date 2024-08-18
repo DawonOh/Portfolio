@@ -59,5 +59,22 @@
         { "id": 2, "image": "/assets/icon/figma.png", "title": "Figma" }
       ]
     }
+  ],
+  "images": [
+    {
+      "id": 1,
+      "image": "/assets/img/fastfive/fastfive_detailpage.png",
+      "alt": "fastfive 프로젝트 상세페이지"
+    },
+    {
+      "id": 2,
+      "image": "/assets/img/fastfive/fastfive_copyEmail.png",
+      "alt": "포트폴리오 프로젝트 이메일 복사"
+    },
+    {
+      "id": 3,
+      "image": "/assets/img/fastfive/fastfive_comment.png",
+      "alt": "포트폴리오 프로젝트 댓글"
+    }
   ]
 }

@@ -5,6 +5,7 @@ import githubIcon from "@/public/assets/icon/github-mark-white.png";
 import { SkillDataArrType } from "../page";
 import { notFound } from "next/navigation";
 import ProjectSkills from "../components/projectSkills/projectSkills";
+import Carousel, { ImageType } from "../components/imageCarousel/carousel";
 
 interface ProjectDetailDataType {
   title: string;
@@ -16,6 +17,7 @@ interface ProjectDetailDataType {
   contribution: string;
   githubLink: string;
   skills: SkillDataArrType[];
+  images: ImageType[];
 }
 
 export default function DetailPage({ params }: { params: { name: string } }) {
@@ -64,6 +66,7 @@ export default function DetailPage({ params }: { params: { name: string } }) {
           </button>
         </Link>
         <ProjectSkills skills={projectDatas.skills} />
+        <Carousel images={projectDatas.images} />
       </div>
     </main>
   );
