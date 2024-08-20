@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Link from "next/link";
+import Header from "./components/header/header";
 
 export const metadata: Metadata = {
   title: "오다원 포트폴리오",
@@ -23,22 +24,7 @@ export default function RootLayout({
   return (
     <html lang="kr" className={`${pretendard.variable} scroll-smooth`}>
       <body className={pretendard.className}>
-        <header className="sticky top-0 p-4 flexCenter bg-white/60 backdrop-blur-xl border-b border-medium-gray z-50">
-          <ul className="w-1/2 flex justify-between items-center">
-            <li>
-              <Link href="/#home">Home</Link>
-            </li>
-            <li>
-              <Link href="/#about">About</Link>
-            </li>
-            <li>
-              <Link href="/#skills">Skills</Link>
-            </li>
-            <li>
-              <Link href="/#projects">Projects</Link>
-            </li>
-          </ul>
-        </header>
+        <Header />
         {children}
         <footer className="fixed bottom-0 w-full flex flex-col justify-center items-center bg-dark-gray">
           <span className="text-xl font-semibold">PORTFOLIO</span>

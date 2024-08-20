@@ -1,11 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import githubIcon from "@/public/assets/icon/github-mark-white.png";
 import { SkillDataArrType } from "../page";
 import { notFound } from "next/navigation";
-import ProjectSkills from "../components/projectSkills/projectSkills";
 import Carousel, { ImageType } from "../components/imageCarousel/carousel";
+import ProjectSkills from "../components/projectSkills/projectSkills";
+
+import githubIcon from "@/public/assets/icon/github-mark-white.png";
+import linkIcon from "@/public/assets/icon/link.png";
 
 interface ProjectDetailDataType {
   title: string;
@@ -16,6 +18,7 @@ interface ProjectDetailDataType {
   member: string;
   contribution: string;
   githubLink: string;
+  siteLink?: string;
   skills: SkillDataArrType[];
   images: ImageType[];
 }
@@ -65,6 +68,21 @@ export default function DetailPage({ params }: { params: { name: string } }) {
             Github
           </button>
         </Link>
+        {projectDatas.siteLink && (
+          <Link href={projectDatas.siteLink} className="inline-block ml-4">
+            <button className="flexCenter gap-2 py-1 px-6 bg-white border rounded-xl">
+              <Image
+                src={linkIcon}
+                alt="link icon"
+                width={10}
+                height={10}
+                className="w-auto h-auto"
+              />
+              Site
+            </button>
+          </Link>
+        )}
+
         <ProjectSkills skills={projectDatas.skills} />
         <Carousel images={projectDatas.images} />
       </div>
