@@ -2,9 +2,7 @@
 import Image from "next/image";
 
 import nextArrow from "@/public/assets/icon/nextArrow.png";
-import nextBlueArrow from "@/public/assets/icon/nextArrow-blue.png";
 import prevArrow from "@/public/assets/icon/prevArrow.png";
-import prevBlueArrow from "@/public/assets/icon/prevArrow-blue.png";
 import { useEffect, useRef, useState } from "react";
 
 export interface ImageType {
@@ -37,7 +35,7 @@ export default function Carousel(props: { images: ImageType[] }) {
   }, [clickIdx]);
 
   return (
-    <div className="mt-20">
+    <div className="my-20">
       <h3 className="text-xl font-semibold">PREVIEW</h3>
       <div
         className={`w-full h-auto flex relative rounded-lg overflow-hidden`}

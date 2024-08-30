@@ -25,7 +25,7 @@ export default function SkillBox(props: { data: SkillDataArrType }) {
             />
           </div>
           {isOpen && (
-            <div className="flex items-center gap-2 mt-2">
+            <div className="flex items-center gap-2 mt-2 md:flex-wrap md:justify-start">
               {props.data.badges.map((badge) => (
                 <Badge key={badge.id} title={badge.title} image={badge.image} />
               ))}

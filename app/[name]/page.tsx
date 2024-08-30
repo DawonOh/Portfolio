@@ -32,23 +32,25 @@ export default function DetailPage({ params }: { params: { name: string } }) {
 
   return (
     <main className="w-full h-screen">
-      <div className="p-40">
+      <div className="p-40 md:p-12">
         <div>
-          <h1 className="text-6xl font-bold text-main-blue">
+          <h1 className="text-6xl md:text-3xl font-bold text-main-blue">
             {projectDatas.title}
           </h1>
-          <p className="mb-24 text-2xl font-semibold">
+          <p className="mb-24 md:mb-12 text-2xl md:text-xl font-semibold">
             {projectDatas.semiTitle}
           </p>
         </div>
-        <div className="mb-16">
-          <h2 className="mb-2 text-2xl font-semibold">프로젝트 소개</h2>
+        <div className="mb-16 md:mb-12">
+          <h2 className="mb-2 text-2xl md:text-xl font-semibold">
+            프로젝트 소개
+          </h2>
           {projectDatas.description.split("/").map((str: string, idx) => (
             <p key={idx}>{str}</p>
           ))}
         </div>
         <div className="flex flex-col gap-1 mb-4">
-          <h3 className="mb-2 text-xl font-semibold">기간 및 인원</h3>
+          <h3 className="mb-2 font-semibold">기간 및 인원</h3>
           <span>
             기간 : {projectDatas.startDate} ~ {projectDatas.endDate}
           </span>
@@ -56,7 +58,10 @@ export default function DetailPage({ params }: { params: { name: string } }) {
             인원 : {projectDatas.member} (기여도 : {projectDatas.contribution}%)
           </span>
         </div>
-        <Link href={projectDatas.githubLink} className="inline-block">
+        <Link
+          href={projectDatas.githubLink}
+          className="inline-block md:text-sm"
+        >
           <button className="flexCenter gap-2 py-1 px-6 bg-black text-white rounded-xl">
             <Image
               src={githubIcon}
@@ -69,7 +74,10 @@ export default function DetailPage({ params }: { params: { name: string } }) {
           </button>
         </Link>
         {projectDatas.siteLink && (
-          <Link href={projectDatas.siteLink} className="inline-block ml-4">
+          <Link
+            href={projectDatas.siteLink}
+            className="inline-block ml-4 md:text-sm"
+          >
             <button className="flexCenter gap-2 py-1 px-6 bg-white border rounded-xl">
               <Image
                 src={linkIcon}
