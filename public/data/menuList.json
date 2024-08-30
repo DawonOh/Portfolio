@@ -1,0 +1,7 @@
+[
+  { "id": 1, "menu": "Home", "link": "/#home" },
+  { "id": 2, "menu": "About", "link": "/#about" },
+  { "id": 3, "menu": "Skills", "link": "/#skills" },
+  { "id": 4, "menu": "Projects", "link": "/#projects" },
+  { "id": 5, "menu": "Github", "link": "https://github.com/DawonOh" }
+]
