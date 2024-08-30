@@ -22,9 +22,6 @@ const config: Config = {
       gridTemplateColumns: {
         card: "repeat(auto-fill, minmax(250px, 1fr))",
       },
-      height: {
-        view: "calc(100vh-3rem)",
-      },
     },
   },
   plugins: [],

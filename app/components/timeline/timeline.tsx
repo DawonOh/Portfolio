@@ -42,7 +42,10 @@ export default function Timeline(props: { timelineDatas: TimelineDataType[] }) {
       <div className="md:hidden absolute flex gap-20 left-1/2 -translate-x-1/2 -translate-y-1/2 z-40">
         {timeLineCircle()}
       </div>
-      <div className="flex flex-col gap-3 md:mt-4 mt-28">
+      <div className="md:block hidden text-xl font-semibold border-b border-text-gray mt-12 mb-4">
+        학습 및 경력
+      </div>
+      <div className="flex flex-col md:gap-8 gap-3 md:mt-2 mt-28">
         {props.timelineDatas.map((data: TimelineDataType) => (
           <div
             key={data.id}
