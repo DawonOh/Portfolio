@@ -1,28 +1,27 @@
 {
   "title": "FASTFIVE 기업 협업 프로젝트",
-  "semiTitle": "Next.js를 사용한 포트폴리오 사이트",
-  "description": "메인페이지와 각 프로젝트의 상세페이지로 구성되어있습니다./Next.js를 사용한 첫 프로젝트이며, 프레임워크를 사용하는데에 익숙해지는 것에 목표를 두었습니다.",
-  "startDate": "2024.08.05",
-  "endDate": "진행중",
-  "member": "프론트엔드 1명",
-  "contribution": 100,
+  "semiTitle": "FASTFIVE 서비스(공유오피스)를 이용하는 회사들의 커뮤니티 사이트입니다.",
+  "description": "부트캠프 파이널 프로젝트입니다. 실제 기업의 기획문서를 바탕으로 디자인과 개발을 진행하였습니다.",
+  "startDate": "2022.12.12",
+  "endDate": "2022.12.27",
+  "member": "프론트엔드 3명 / 백엔드 2명",
+  "contribution": 35,
   "githubLink": "https://github.com/DawonOh/fastfive-team3-front",
   "skills": [
     {
       "id": 1,
       "category": "언어 및 라이브러리",
       "badges": [
-        { "id": 1, "image": "/assets/icon/nextjs.png", "title": "Next.js" },
-        { "id": 2, "image": "/assets/icon/react.png", "title": "React" },
+        { "id": 1, "image": "/assets/icon/react.png", "title": "React" },
         {
-          "id": 3,
+          "id": 2,
           "image": "/assets/icon/typescript.png",
           "title": "TypeScript"
         },
         {
-          "id": 4,
-          "image": "/assets/icon/tailwindcss.png",
-          "title": "Tailwind CSS"
+          "id": 3,
+          "image": "/assets/icon/sass.png",
+          "title": "SCSS"
         }
       ]
     },
@@ -56,7 +55,7 @@
           "image": "/assets/icon/github.png",
           "title": "Git/Github"
         },
-        { "id": 2, "image": "/assets/icon/figma.png", "title": "Figma" }
+        { "id": 2, "image": "/assets/icon/notion.png", "title": "Notion" }
       ]
     }
   ],
